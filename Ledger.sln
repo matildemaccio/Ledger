@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledger.Api", "Ledger.Api\Ledger.Api.csproj", "{8D3FA6CA-A6A8-47D2-98AF-03768EA354CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledger.Application", "Ledger.Application\Ledger.Application.csproj", "{36F4EFCB-137B-470D-9C3A-24607D9D2724}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledger.Domain", "Ledger.Domain\Ledger.Domain.csproj", "{4247D202-CA20-4EE9-986F-92ABBBF4212E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledger.Infrastructure", "Ledger.Infrastructure\Ledger.Infrastructure.csproj", "{90EDB588-019C-43DD-94C1-56D0262016AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledger.Application.Tests", "Ledger.Tests\Ledger.Application.Tests.csproj", "{5EDA7139-3BFA-4B8B-AAED-249F9E203167}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledger.Api.Tests", "Ledger.Api.Tests\Ledger.Api.Tests.csproj", "{4E944F6F-C41D-49C4-9CD7-107AAC5E66DD}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E2BE126E-93C6-43C4-A31B-5726E62DF716}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D3FA6CA-A6A8-47D2-98AF-03768EA354CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3FA6CA-A6A8-47D2-98AF-03768EA354CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3FA6CA-A6A8-47D2-98AF-03768EA354CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3FA6CA-A6A8-47D2-98AF-03768EA354CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F4EFCB-137B-470D-9C3A-24607D9D2724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F4EFCB-137B-470D-9C3A-24607D9D2724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F4EFCB-137B-470D-9C3A-24607D9D2724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F4EFCB-137B-470D-9C3A-24607D9D2724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4247D202-CA20-4EE9-986F-92ABBBF4212E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4247D202-CA20-4EE9-986F-92ABBBF4212E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4247D202-CA20-4EE9-986F-92ABBBF4212E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4247D202-CA20-4EE9-986F-92ABBBF4212E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90EDB588-019C-43DD-94C1-56D0262016AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90EDB588-019C-43DD-94C1-56D0262016AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90EDB588-019C-43DD-94C1-56D0262016AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90EDB588-019C-43DD-94C1-56D0262016AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EDA7139-3BFA-4B8B-AAED-249F9E203167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDA7139-3BFA-4B8B-AAED-249F9E203167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDA7139-3BFA-4B8B-AAED-249F9E203167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDA7139-3BFA-4B8B-AAED-249F9E203167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E944F6F-C41D-49C4-9CD7-107AAC5E66DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E944F6F-C41D-49C4-9CD7-107AAC5E66DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E944F6F-C41D-49C4-9CD7-107AAC5E66DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E944F6F-C41D-49C4-9CD7-107AAC5E66DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BE126E-93C6-43C4-A31B-5726E62DF716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BE126E-93C6-43C4-A31B-5726E62DF716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BE126E-93C6-43C4-A31B-5726E62DF716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BE126E-93C6-43C4-A31B-5726E62DF716}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0815CFAC-AFE2-494A-810C-6C40EE03E1C1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Ledger.Api/bin
+/.vs/Ledger/FileContentIndex
+/Ledger.Api/obj
+/Ledger.Api.Tests/bin/Debug/net8.0
+/Ledger.Api.Tests/obj
+/Ledger.Application/bin
+/Ledger.Application/obj
+/Ledger.Domain/bin
+/Ledger.Domain/obj
+/Ledger.Infrastructure/bin
+/Ledger.Infrastructure/obj
+/Ledger.Tests/bin/Debug/net8.0
+/Ledger.Tests/obj
+/.vs
+/obj/Docker
+/bin/Debug
+/obj/Debug
