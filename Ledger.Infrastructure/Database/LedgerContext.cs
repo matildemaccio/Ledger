@@ -12,5 +12,10 @@ namespace Ledger.Infrastructure.Database
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Entry> Entries { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Transaction>().Navigation(x => x.Entries).AutoInclude();
+        }
     }
 }
