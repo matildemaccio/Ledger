@@ -4,6 +4,8 @@ using Ledger.Domain.Model;
 using Ledger.Infrastructure.Repositories;
 using MediatR;
 using System.Data;
+using System.Diagnostics;
+using System.Reflection.Emit;
 
 namespace Ledger.Application.Commands
 {
@@ -35,10 +37,6 @@ namespace Ledger.Application.Commands
                 await ValidateEntriesNotExist(command.Entries);
 
                 List<Guid> commandEntryAccountIds = command.Entries.Select(x => x.AccountId).Distinct().ToList();
-                // In a real world scenario I would perform the reading/writing over accounts in an atomic operation.
-                // For example using a SELECT FOR UPDATE in a SQL database.
-                // Or using an UPDATE with a WHERE clause that checks the current balance in a SQL database.
-                // None of this options are available with an in-memory database, which is the case here.
                 Dictionary<Guid, Account> accounts = await _accountRepository.GetAllByIdAsync(commandEntryAccountIds);
                 ValidateAccountsExist(commandEntryAccountIds, accounts);
 
